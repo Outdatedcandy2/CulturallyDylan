@@ -8,150 +8,146 @@
     <link rel="stylesheet" href="style.css">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.3/gsap.min.js" defer></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.3/ScrollTrigger.min.js" defer></script>
+    <script src="./app.js" defer></script>
     <script src="./script.js" defer></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js"
+        integrity="sha512-aVKKRRi/Q/YV+4mjoKBsE4x3H+BkegoM/em46NNlCqNTmUYADjBbeNefNxYV7giUp0VxICtqdrbqU7iVaeZNXA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script src="https://kit.fontawesome.com/a076d05399.js"></script>
     <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet'>
     <title>Dylan's World</title>
 </head>
 
 <body>
+
+
+
+
+
     <div class="noise"></div>
 
 
-
-    <div class="navlogo">
-        <img src="./assets/Dylanlogo.png">
-    </div>
-
-
-
-    <input type="checkbox" id="active">
-    <label for="active" class="menu-btn"><i class="fas fa-bars"></i></label>
-    <div class="wrapper" id="sidebar">
-        <ul>
-            <li><a href="#home">Home</a></li>
-            <li><a href="#about">About</a></li>
-            <li><a href="#songs">Songs</a></li>
-            <li><a href="#merch">Merch</a></li>
-            <li><a href="#contact">Contact</a></li>
-        </ul>
-    </div>
-
-    <div class="stuff">
-        <section class="sec1" id="home">
-            <h1 class="maintitle">Hi, i'm Dylan</h1>
-            <p class="musicart">I'm a Music Artist</p>
-            <div>
-                <div class="container">
-                    <div class="icon-scroll"></div>
-                </div>
-            </div>
-
-        </section>
-
-
-
-
-
-
-        <section class="aboutsec" id="about">
-
-            <h1 class="aboutme">About Me</h1>
-            <div class="abouttxt">
-                <p>Hi, My Name Is Dylan And I Had A Passion For Music Every Since I Was</p>
-                <p>In 9th Grade. I Started Pursuing My Dreams Recently And Now Work</p>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod </p>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod </p>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod </p>
-                <h1 class="bgtxt">ABOUT ME</h1>
-            </div>
-
-        </section>
-
-
-
-        <svg id="text-container" viewBox="0 0 1000 200" xmlns="http://www.w3.org/2000/svg">
-            <path id="text-curve" d="M0 100s269.931 86.612 520 0c250.069-86.612 480 0 480 0" fill="none" />
-
-            <text y="-46" font-size="32" class="textsvg">
-                <textPath id="text-path" href="#text-curve" startOffset="1050">
-                    Welcome To Dylan's World
-                </textPath>
-            </text>
-        </svg>
-
-
-        <section class="albums" Id="songs">
-
-
-            <h1 class="newrel">Latest Releases</h1>
-
-
-            <div class="covers">
-                <img src="./assets/rip.jpg" width="220" height="220" class="albcov">
-                <img src="./assets/hope.jpg" width="220" height="220" class="albcov">
-                <img src="./assets/ever.jpg" width="220" height="220" class="albcov">
-                <img src="./assets/chery.jpg" width="220" height="220" class="albcov">
-
-            </div>
-
-
-        </section>
-
-
-
-        <div class="parent">
-
-
-
-            <h1>Pre-released Songs</h1>
-            <audio id="audio">
-                <source src="assets/rip.wav" type="audio/wav">
-            </audio>
-            <button id="playPauseBTN" onclick="playPause()" class="outrel">
-                <img src="./assets/rip.jpg" width="300" height="300" class="prerel">
-            </button>
-
-
-
-            <p>Click To Play And Pause The Music</p>
-
-
-
+    <div class="thestuff">
+        <div class="navlogo">
+            <img src="./assets/Dylanlogo.png">
         </div>
 
 
-        <section class="merchsec" id="merch">
-            <h1 class="merch">Merch</h1>
-            <div class="merchitems">
-                <div class="buy">
-                    <img src="./assets/shirt.png" height="200px" width="300px" class="shirt">
-                    <h1>Shirt</h1>
-                    <p class="itemdes">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-                    <button class="buybtn">BUY</button>
+        <input type="checkbox" id="active">
+        <label for="active" class="menu-btn"><i class="fas fa-bars"></i></label>
+        <div class="wrapper" id="sidebar">
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#songs">Songs</a></li>
+                <li><a href="#merch">Merch</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+
+        <div class="stuff">
+            <section class="sec1" id="home">
+                <h1 class="maintitle">Hi, i'm Dylan</h1>
+                <p class="musicart">I'm a Music Artist</p>
+
+
+            </section>
+
+
+
+
+
+
+            <section class="aboutsec" id="about">
+
+                <h1 class="aboutme">About Me</h1>
+                <div class="abouttxt">
+                    <p>Hi, My Name Is Dylan And I Had A Passion For Music Every Since I Was</p>
+                    <p>In 9th Grade. I Started Pursuing My Dreams Recently And Now Work</p>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod </p>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod </p>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod </p>
+                    <h1 class="bgtxt">ABOUT ME</h1>
                 </div>
-                <div class="buy">
-                    <img src="./assets/shirt.png" height="200px" width="300px" class="shirt">
-                    <h1>Shirt</h1>
-                    <p class="itemdes">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-                    <button class="buybtn">BUY</button>
+
+            </section>
+
+
+
+
+
+            <section class="albums" Id="songs">
+
+
+                <h1 class="newrel">Latest Releases</h1>
+
+
+                <div class="covers">
+                    <img src="./assets/rip.jpg" width="220" height="220" class="albcov">
+                    <img src="./assets/hope.jpg" width="220" height="220" class="albcov">
+                    <img src="./assets/ever.jpg" width="220" height="220" class="albcov">
+                    <img src="./assets/chery.jpg" width="220" height="220" class="albcov">
+            
+
                 </div>
-                <div class="buy">
-                    <img src="./assets/shirt.png" height="200px" width="300px" class="shirt">
-                    <h1>Shirt</h1>
-                    <p class="itemdes">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-                    <button class="buybtn">BUY</button>
-                </div>
-                <div class="buy">
-                    <img src="./assets/shirt.png" height="200px" width="300px" class="shirt">
-                    <h1>Shirt</h1>
-                    <p class="itemdes">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-                    <button class="buybtn">BUY</button>
-                </div>
+               
+
+            </section>
+
+
+
+            <div class="parent">
+
+
+
+                <h1>Pre-released Songs</h1>
+                <audio id="audio">
+                    <source src="assets/rip.wav" type="audio/wav">
+                </audio>
+                <button id="playPauseBTN" onclick="playPause()" class="outrel">
+                    <img src="./assets/rip.jpg" width="300" height="300" class="prerel">
+                </button>
+
+
+
+                <p>Click To Play And Pause The Music</p>
+
+
+
             </div>
 
+            <section class="merchsec" id="merch">
+                <h1 class="merch">Merch</h1>
+                <div class="merchitems">
+                    <div class="buy">
+                        <img src="./assets/shirt.png" height="200px" width="300px" class="shirt">
+                        <h1>Shirt</h1>
+                        <p class="itemdes">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                        <button class="buybtn">BUY</button>
+                    </div>
+                    <div class="buy">
+                        <img src="./assets/shirt.png" height="200px" width="300px" class="shirt">
+                        <h1>Shirt</h1>
+                        <p class="itemdes">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                        <button class="buybtn">BUY</button>
+                    </div>
+                    <div class="buy">
+                        <img src="./assets/shirt.png" height="200px" width="300px" class="shirt">
+                        <h1>Shirt</h1>
+                        <p class="itemdes">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                        <button class="buybtn">BUY</button>
+                    </div>
+                    <div class="buy">
+                        <img src="./assets/shirt.png" height="200px" width="300px" class="shirt">
+                        <h1>Shirt</h1>
+                        <p class="itemdes">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                        <button class="buybtn">BUY</button>
+                    </div>
+                </div>
 
-            <div class="pt1"></div>
+        </div>
+
+        <div class="pt1"></div>
 
 
 
@@ -179,36 +175,59 @@
             </form>
         </section>
         <footer>
-            <p class="lessop">This Page Was Viewed</p>
-            <p id="count">0</p>
-            <p class="lessop">Times</p>
-            <script>
-                const countEl = document.getElementById('count');
-
-                updateVisitCount();
-
-                function updateVisitCount() {
-                    fetch('https://api.countapi.xyz/update/Ypp/TeamAscend/?amount=1')
-                        .then(res => res.json())
-                        .then(res => {
-                            countEl.innerHTML = res.value;
-                        })
-                }
-            </script>
             <p class="lessop">
                 Created With ❤️ By Dylan</p>
     </div>
-    </footer>
+</footer>
 
-    </div>
+
     <script>
-        const toggel = document.getElementById('active');
-        const sidebar = document.getElementById('sidebar');
-        toggel.onclick = function () {
-            toggel.classList.toggle('active')
-            sidebar.classList.toggle('active')
+        gsap.registerPlugin(ScrollTrigger);
+
+        //---------------------Landing Page ScrollTrigger---------------------
+        function LandingPageScrollTrigger() {
+
+            gsap.to('body', { // LoadingAnimation---------------------
+                opacity: 1, duration: 1.3,
+            }) // /LoadingAnimation---------------------
+
+            $("#codeby a").mouseenter(function () { // HoverAnimation---------------------
+                gsap.to('#ImgWrapper', { backgroundColor: "#f0f0f0", })
+                gsap.to('#codeby a', { color: "#2e2e2e", })
+                gsap.to('#codeby a span', { color: "#000000", })
+            });
+            $("#codeby a").mouseout(function () {
+                gsap.to('#ImgWrapper', { backgroundColor: "#000000", })
+                gsap.to('#codeby a', { color: "#e6e6e6", })
+                gsap.to('#codeby a span', { color: "#f0f0f0", })
+            }); // /HoverAnimation---------------------
+
+            let LandingPageScrollTrigger = gsap.timeline({
+                scrollTrigger: {
+                    trigger: "#ImgWrapper",
+                    start: "0% 0%",
+                    end: "100% 0%",
+                    pin: "#ImgWrapper",
+                    scrub: 2.2,
+                }
+            })
+            LandingPageScrollTrigger
+                .to('#ImgWrapper #img7', { transform: 'translateZ(4500px)', }, 0)
+                .to('#ImgWrapper #img6', { transform: 'translateZ(3700px)', }, 0)
+                .to('#ImgWrapper #img5', { transform: 'translateZ(3100px)', }, 0)
+                .to('#ImgWrapper #img4', { transform: 'translateZ(2800px)', }, 0)
+                .to('#ImgWrapper #img3', { transform: 'translateZ(2600px)', }, 0)
+                .to('#ImgWrapper #img2', { transform: 'translateZ(2400px)', }, 0)
+                .to('#ImgWrapper #img1', { transform: 'translateZ(2200px)', }, 0)
+                .from('#codeby a', { y: 130, opacity: 0 }, 0.31)
+        }
+        //---------------------/Landing Page ScrollTrigger---------------------
+
+        window.onload = () => {
+            LandingPageScrollTrigger()
         }
     </script>
+
     <script>
         var audio = document.getElementById('audio');
         audio.volume = 0.4;
@@ -243,7 +262,7 @@
             textPath.setAttribute("startOffset", (-percent * 90) + 1200)
         });
     </script>
-
+    </div>
 
 
 

@@ -1,4 +1,10 @@
+gsap.from('.hamg',{
+    delay: 2,
+    duration: 1.5,
+    opacity: 0,
+    y: '-60px',
 
+})
 gsap.from('.navlogo', {
     delay: 1,
     duration: 1,
@@ -62,11 +68,12 @@ gsap.timeline({
         duration: 0.3,
         y: '100px',
         opacity: 0,
-        ease: 'power1'
+        ease: 'power1',
+        markers:true
     })
 gsap.set(".albums", { xPercent: -50, yPercent: -50 });
 gsap.to(".albums", {
-    scale: 0.5,
+    scale: 2.5,
     opacity: 0,
     scrollTrigger: {
         trigger: ".parent",
@@ -87,6 +94,4 @@ gsap.timeline({
     x:innerWidth*1.6,
     ease: 'power1',
 })
-
-
 
