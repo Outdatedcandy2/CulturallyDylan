@@ -91,7 +91,7 @@ gsap.timeline({
     }
 })
 .to(".bgtxt",{
-    x:innerWidth*1.6,
+    x:innerWidth*1.75,
     ease: 'power1',
 })
 
