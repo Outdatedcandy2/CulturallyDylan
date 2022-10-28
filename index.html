@@ -6,6 +6,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+    <script src="pace.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/jquery-bez@1.0.11/src/jquery.bez.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.2/TweenMax.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.3/gsap.min.js" defer></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.3/ScrollTrigger.min.js" defer></script>
     <script src="./app.js" defer></script>
@@ -19,8 +23,11 @@
 </head>
 
 <body>
-
-
+    <div class="loader-container">
+        <div class="loader"></div>
+    </div>
+    
+  
 
 
 
@@ -33,21 +40,17 @@
         </div>
 
 
-        <input type="checkbox" id="active">
-        <label for="active" class="menu-btn"><i class="fas fa-bars"></i></label>
-        <div class="wrapper" id="sidebar">
-            <ul>
-                <li><a href="#home">Home</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#songs">Songs</a></li>
-                <li><a href="#merch">Merch</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-        </div>
+        <nav class="navbar">
+            <a href="#home">Home</a>
+            <a href="#about">About</a>
+            <a href="#songs">Songs</a>
+            <a href="#merch">Merch</a>
+            <a href="#contact">Contact</a>
+          </nav>
 
         <div class="stuff">
             <section class="sec1" id="home">
-                <h1 class="maintitle">Hi, i'm Dylan</h1>
+                <h1 class="maintitle">Hi, I'm Dylan</h1>
                 <p class="musicart">I'm a Music Artist</p>
 
 
@@ -62,11 +65,10 @@
 
                 <h1 class="aboutme">About Me</h1>
                 <div class="abouttxt">
-                    <p>Hi, My Name Is Dylan And I Had A Passion For Music Every Since I Was</p>
-                    <p>In 9th Grade. I Started Pursuing My Dreams Recently And Now Work</p>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod </p>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod </p>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod </p>
+                    <p> Hi, I'm Dylan. I'm a budding artist with huge interest in </p>
+                    <p>hip-hop and rap. I like to experiment with different genres as well.</p>
+                    <p> I pursue my passion of making music as a full time career now. </p>
+                    <p>For any business related queries or bookings <a href="#contact">click here</a></p>
                     <h1 class="bgtxt">ABOUT ME</h1>
                 </div>
 
@@ -83,10 +85,18 @@
 
 
                 <div class="covers">
-                    <img src="./assets/rip.jpg" width="220" height="220" class="albcov">
-                    <img src="./assets/hope.jpg" width="220" height="220" class="albcov">
-                    <img src="./assets/ever.jpg" width="220" height="220" class="albcov">
-                    <img src="./assets/chery.jpg" width="220" height="220" class="albcov">
+                    <a href="https://open.spotify.com/track/3xa8ejQLxZNElGUc71yDZz?si=994c3b4820424cb9" target="_blank">
+                        <img src="./assets/albcov1.png" width="220" height="220" class="albcov">
+                    </a>
+                    <a href="https://open.spotify.com/track/3GVkPk8mqxz0itaAriG1L7?si=b36c46423c474c50" target="_blank">
+                        <img src="./assets/albcov2.png" width="220" height="220" class="albcov">
+                    </a>
+                    <a href="https://open.spotify.com/track/2ZRo7axmMPeSVUvDbGkJah?si=16284be4058d472f" target="_blank">
+                        <img src="./assets/albcov3.png" width="220" height="220" class="albcov">
+                    </a>
+                    <a href="https://open.spotify.com/track/3ee8Jmje8o58CHK66QrVC2?si=8b089c395eeb4ea6" target="_blank">
+                        <img src="./assets/albcov4.png" width="220" height="220" class="albcov">
+                    </a>
             
 
                 </div>
@@ -100,12 +110,12 @@
 
 
 
-                <h1>Pre-released Songs</h1>
+                <h1>Out Soon</h1>
                 <audio id="audio">
                     <source src="assets/rip.wav" type="audio/wav">
                 </audio>
                 <button id="playPauseBTN" onclick="playPause()" class="outrel">
-                    <img src="./assets/rip.jpg" width="300" height="300" class="prerel">
+                    <img src="./assets/albcov1.png" width="300" height="300" class="prerel">
                 </button>
 
 
@@ -120,28 +130,30 @@
                 <h1 class="merch">Merch</h1>
                 <div class="merchitems">
                     <div class="buy">
-                        <img src="./assets/shirt.png" height="200px" width="300px" class="shirt">
-                        <h1>Shirt</h1>
-                        <p class="itemdes">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-                        <button class="buybtn">BUY</button>
+                        <img src="./assets/cap.png" height="200px" width="220px" class="shirt">
+                        <h1>Cap</h1>
+                        <p class="itemdes">High Quality Fabric Cap With The Dylan Logo</p>
+                        <a href="https://a.co/d/d7CHPkB" target="_blank"><button class="buybtn">$5</button></a>
                     </div>
                     <div class="buy">
-                        <img src="./assets/shirt.png" height="200px" width="300px" class="shirt">
-                        <h1>Shirt</h1>
-                        <p class="itemdes">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-                        <button class="buybtn">BUY</button>
+                        <img src="./assets/hoddie.png" height="200px" width="200px" class="shirt">
+                        <h1>Hoodie</h1>
+                        <p class="itemdes">Hoodie Made From High Quality Fabric With The Dylan Logo On The Front</p>
+                        <a href="https://a.co/d/fe4zZLj" target="_blank"><button class="buybtn">$10</button></a>
                     </div>
                     <div class="buy">
-                        <img src="./assets/shirt.png" height="200px" width="300px" class="shirt">
-                        <h1>Shirt</h1>
-                        <p class="itemdes">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-                        <button class="buybtn">BUY</button>
+                        <img src="./assets/Hoodie.png" height="200px" width="200px" class="shirt">
+                        <h1>Jacket</h1>
+                        <p class="itemdes">Premium Quality Jacket Made With High Quality Fabric With Zip With The Dylan Logo In Fornt</p>
+                        <a href="https://a.co/d/feRgtnk" target="_blank">
+                            <button class="buybtn">$12</button>
+                        </a>
                     </div>
                     <div class="buy">
-                        <img src="./assets/shirt.png" height="200px" width="300px" class="shirt">
-                        <h1>Shirt</h1>
-                        <p class="itemdes">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-                        <button class="buybtn">BUY</button>
+                        <img src="./assets/sign.png" height="200px" width="300px" class="shirt">
+                        <h1>Signed Vinyl</h1>
+                        <p class="itemdes">Special Signed Edition Of The Latest Album</p>
+                        <a href="https://a.co/d/5RJjDWT" target="_blank"><button class="buybtn">$10.99</button></a>
                     </div>
                 </div>
 
@@ -175,10 +187,17 @@
             </form>
         </section>
         <footer>
-            <p class="lessop">
-                Created With ❤️ By Dylan</p>
+            <p class="lessop">Created With ❤️ By Joey</p>
+            <p class="lessop">HCET Syndicate</p>
     </div>
 </footer>
+
+<script>
+    $(window).on("load",function(){
+        $(".loader-container").fadeOut(1000);
+
+    });
+</script>
 
 
     <script>
